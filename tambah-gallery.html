@@ -86,7 +86,7 @@
                 </li>
                 <li class="has-submenu"><a href="agent.html"><i class="fa fa-user"></i> <span class="nav-label">Data Agen</span></a>
                 </li>
-                <li class="has-submenu"><a href="#"><i class="ion-ios7-keypad"></i> <span class="nav-label">Data Master</span></a>
+                <li class="has-submenu active"><a href="#"><i class="ion-ios7-keypad"></i> <span class="nav-label">Data Master</span></a>
                     <ul class="list-unstyled">
                         <li><a href="jadwal.html"><i class="fa fa-calendar"></i> Jadwal</a></li>
                         <li><a href="komisi.html"><i class="fa fa-money"></i> Komisi</a></li>
@@ -94,23 +94,25 @@
                         <li><a href="brosur.html"><i class="ion-map"></i> Brosur</a></li>
                         <li><a href="kalkulasi.html"><i class="ion-calculator"></i>Kalkulasi</a></li>
                         <li><a href="broadcast.html"><i class="ion-speakerphone"></i> Broadcast</a></li>
-                        <li><a href="master-gallery.html"><i class="fa fa-file-image-o"></i>Gallery</a></li>
+                        <li class="active"><a href="master-gallery.html"><i class="fa fa-file-image-o"></i>Gallery</a></li>
                         <li><a href="master-hotel.html"><i class="fa fa-building-o"></i> Hotel</a></li>
                         <li><a href="notifikasi.html"><i class="fa fa-bell-o"></i> Notifikasi</a></li>
                         <!-- <li><a href="notification.html">Notification</a></li>
                         <li><a href="sweet-alert.html">Sweet-Alert</a></li> -->
                     </ul>
                 </li>
-                <li class="has-submenu active"><a href="#"><i class="fa fa-database"></i> <span class="nav-label">CRUD</span></a>
+                <li class="has-submenu"><a href="#"><i class="fa fa-database"></i> <span class="nav-label">CRUD</span></a>
                   <ul class="list-unstyled">
-                      <li class="active"><a href="jadwal.html"><i class="fa fa-plus"></i> Input Jamaah</a></li>
+                      <li class=""><a href="input-jamaah.html"><i class="fa fa-plus"></i> Input Jamaah</a></li>
                       <!-- <li><a href="komisi.html"><i class="fa fa-money"></i> Komisi</a></li>
                       <li><a href="itenary.html"><i class="fa fa-book"></i>Itenary</a></li> -->
                       <!-- <li><a href="notification.html">Notification</a></li>
                       <li><a href="sweet-alert.html">Sweet-Alert</a></li>
                   </ul> -->
+                      </li>
+                </ul>
+                <li class="has-submenu"><a href="#"><i class="ion-ios7-person"></i> <span class="nav-label">Authorize Admin</span></a>
                 </li>
-            </ul>
         </nav>
 
       </aside>
@@ -196,7 +198,7 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">Form Wizard</h3>
+                    <h3 class="title">Form Tambah Gallery</h3>
                 </div>
 
                 <!-- Wizard with Validation -->
@@ -204,171 +206,34 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Input Jamaah</h3>
+                                <h3 class="panel-title">Input Gallery Baru</h3>
                             </div>
                             <div class="panel-body">
-                                <form id="wizard-validation-form" action="#">
-                                    <div>
-                                        <h3>Tahap 1</h3>
-                                        <section>
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="agent">Agen yang di tuju </label>
-                                                <div class="col-lg-10">
-                                                    <select name="" class="select2" id="agent">
-                                                        <option value="">Ismail</option>
-                                                        <option value="">Ikhsan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="jadwal_id">Jadwal Jamaah</label>
-                                                <div class="col-lg-10">
-                                                    <select name="jadwal_id" class="select2" id="jadwal_id">
-                                                        <option value="">17 Agustus 2018</option>
-                                                        <option value="">Bla blabal</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="id_aiwa">Id Aiwa</label>
-                                                <div class="col-lg-10">
-                                                    <input id="id_aiwa" name="id_aiwa" type="text" class="required form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="nama">Nama</label>
-                                                <div class="col-lg-10">
-                                                    <input id="nama" name="nama" type="text" class="required form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="no_telp">No Telpon</label>
-                                                <div class="col-lg-10">
-                                                    <input type="text" placeholder="" class="form-control" id="no_telp" name="no_telp">
-                                                    <span class="help-inline">089-539896424</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="alamat">Alamat</label>
-                                                <div class="col-lg-10">
-                                                    <input id="alamat" name="alamat" type="text" class="required form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="jenis_kelamin">Jenis Kelamin</label>
-                                                <div class="col-lg-10">
-                                                    <select name="jenis_kelamin" class="form-control" id="jenis_kelamin">
-                                                        <option value="Pria">Pria</option>
-                                                        <option value="Wanita">Wanita</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="batasan_usia">Batasan Usia</label>
-                                                <div class="col-lg-10">
-                                                    <input id="batasan_usia" name="batasan_usia" type="text" class="required form-control">
-                                                </div>
-                                            </div>
-
-
-                                            <!--
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-12 control-label ">(*) Mandatory</label>
-                                            </div> -->
-                                        </section>
-                                        <h3>Tahap 2</h3>
-                                        <section>
-                                          <!-- <div class="form-group clearfix">
-                                              <label class="col-lg-2 control-label" for="kamar"> Jenis Kamar</label>
-                                              <div class="col-lg-10">
-                                                  <select id="kamar" name="kamar" type="file" class="select2 required form-control">
-                                                      <option value=""></option>
-                                                      <option value=""></option>
-                                                      <option value=""></option>
-                                                  </select>
-                                              </div>
-                                          </div> -->
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label" for="foto"> Pas Photo</label>
-                                                <div class="col-lg-10">
-                                                    <input id="foto" name="foto" type="file" class="required form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="passport"> Passport</label>
-                                                <div class="col-lg-10">
-                                                    <input id="passport" name="passport" type="file" class="required form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="meningitis">Meningitis</label>
-                                                <div class="col-lg-10">
-                                                    <input id="meningitis" name="meningitis" type="file" class="required form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="buku_nikah">Buku Nikah</label>
-                                                <div class="col-lg-10">
-                                                    <input id="buku_nikah" name="buku_nikah" type="file" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="fc_akta">Foto Akta Kelahiran</label>
-                                                <div class="col-lg-10">
-                                                    <input id="fc_akta" name="fc_akta" type="file" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label " for="visa">VISA</label>
-                                                <div class="col-lg-10">
-                                                    <input id="visa" name="visa" type="text" class="form-control">
-                                                </div>
-                                            </div>
-
-                                        </section>
-                                        <h3>Tahap 3</h3>
-                                        <section>
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label" for="diskon">Diskon</label>
-                                                <div class="col-lg-10">
-                                                    <input id="diskon" name="diskon" type="text" class="required form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-lg-2 control-label" for="datepicker">Tanggal Followup</label>
-                                                <div class="col-lg-10">
-                                                  <input type="text" class="form-control" name="tanggal_followup" id="datepicker" placeholder="mm/dd/yyyy" id="datepicker">
-                                                  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <h3>Tahap 4</h3>
-                                        <section>
-                                          <div class="form-group clearfix">
-                                              <label class="col-lg-2 control-label" for="keterangan">Keterangan</label>
-                                              <div class="col-lg-10">
-                                                <input type="text" class="form-control" name="text" id="keterangan" id="keterangan">
-                                              </div>
-                                          </div>
-                                          <div class="form-group clearfix">
-                                              <label class="col-lg-2 control-label" for="pembayaran">Pembayaran</label>
-                                              <div class="col-lg-10">
-                                                <input type="text" class="form-control" name="text" id="pembayaran" id="pembayaran">
-                                              </div>
-                                          </div>
-                                        </section>
-                                    </div>
-                                </form>
+                              <form class="form-horizontal" role="form" action="master-gallery.html">
+                                  <div class="form-group">
+                                      <label class="col-md-2 control-label" for="judul">Judul</label>
+                                      <div class="col-md-10">
+                                          <input name="judul" class="form-control" id="judul">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-md-2 control-label">File</label>
+                                      <div class="col-md-10">
+                                          <input type="file" class="form-control" name="file" value="Gambar/Video" autofocus>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-md-2 control-label" for="deskripsi">Deskripsi</label>
+                                      <div class="col-md-10">
+                                          <textarea name="deskripsi" rows="8" cols="80" class="form-control" id="deskripsi"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="col-md-offset-2 col-md-10">
+                                          <button class="btn btn-sm btn-primary" type="submit">Tambah</button>
+                                      </div>
+                                  </div>
+                              </form>
                             </div>  <!-- End panel-body -->
                         </div> <!-- End panel -->
 

@@ -154,7 +154,7 @@ aside.left-panel.collapsed {
   position: absolute;
   bottom: 0px;
 }
-    
+
 aside.left-panel.lg {
   width: 250px;
 }
@@ -162,7 +162,7 @@ aside.left-panel.lg {
 aside.left-panel.lg + .content {
   margin-left: 250px;
 }
-    
+
 /***** 2.1 LOGO *****/
 .logo {
   padding-top: 20px;
@@ -268,12 +268,12 @@ aside:not(.collapsed) .navigation ul li.active ul {
 }
 
 .navigation ul li ul li.active a {
-  color: #fff !important;
+  color: #f5ef00 !important;
 }
 
 
 /******************** 3.Top Header ****************/
-    
+
 header {
   background-color: #fff;
   border-bottom: 1px solid #ececee;
@@ -1390,7 +1390,7 @@ div.dataTables_info {
 
 
 /************* 14.Mail **********/
-    
+
 .mails .mail-rateing {
   color: #9d9ea5;
   width: 1%;
@@ -1967,12 +1967,12 @@ ul.p-social-link li a {
   margin:0 auto;
 }
 
-#legend { 
-  background: white; 
-  position: absolute; 
-  top: 0; 
-  right: 15px; 
+#legend {
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 #legend .line {
-  color: #333; 
+  color: #333;
 }
