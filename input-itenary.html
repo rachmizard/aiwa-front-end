@@ -90,7 +90,7 @@
                 </li>
                 <li class="has-submenu"><a href="caljam.html"><i class="fa fa-group"></i> <span class="nav-label">Laporan Caljam</span></a>
                 </li>
-                <li class="has-submenu active"><a href="#"><i class="ion-ios7-keypad"></i> <span class="nav-label">Data Master</span></a>
+                <li class="has-submenu"><a href="#"><i class="ion-ios7-keypad"></i> <span class="nav-label">Data Master</span></a>
                     <ul class="list-unstyled">
                         <li><a href="jadwal.html"><i class="fa fa-calendar"></i> Jadwal</a></li>
                         <li><a href="komisi.html"><i class="fa fa-money"></i> Komisi</a></li>
@@ -98,17 +98,17 @@
                         <li><a href="brosur.html"><i class="ion-map"></i> Brosur</a></li>
                         <li><a href="kalkulasi.html"><i class="ion-calculator"></i>Kalkulasi</a></li>
                         <li><a href="broadcast.html"><i class="ion-speakerphone"></i> Broadcast</a></li>
-                        <li><a href="master-gallery.html"><i class="fa fa-file-image-o"></i>Gallery</a></li>
-                        <li class="active"><a href="master-hotel.html"><i class="fa fa-building-o"></i> Hotel</a></li>
+                        <li class=""><a href="master-gallery.html"><i class="fa fa-file-image-o"></i>Gallery</a></li>
+                        <li><a href="master-hotel.html"><i class="fa fa-building-o"></i> Hotel</a></li>
                         <li><a href="notifikasi.html"><i class="fa fa-bell-o"></i> Notifikasi</a></li>
                         <!-- <li><a href="notification.html">Notification</a></li>
                         <li><a href="sweet-alert.html">Sweet-Alert</a></li> -->
                     </ul>
                 </li>
-                <li class="has-submenu"><a href="#"><i class="fa fa-database"></i> <span class="nav-label">CRUD</span></a>
+                <li class="has-submenu active"><a href="#"><i class="fa fa-database"></i> <span class="nav-label">CRUD</span></a>
                   <ul class="list-unstyled">
                       <li class=""><a href="input-jamaah.html"><i class="fa fa-plus"></i> Input Jamaah</a></li>
-                      <li class=""><a href="input-itenary.html"><i class="fa fa-plus"></i> Itenary</a></li>
+                      <li class="active"><a href="input-itenary.html"><i class="fa fa-plus"></i> Itenary</a></li>
                       <!-- <li><a href="komisi.html"><i class="fa fa-money"></i> Komisi</a></li>
                       <li><a href="itenary.html"><i class="fa fa-book"></i>Itenary</a></li> -->
                       <!-- <li><a href="notification.html">Notification</a></li>
@@ -208,7 +208,7 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title">Form Tambah Hotel</h3>
+                    <h3 class="title">Form Input Itenary</h3>
                 </div>
 
                 <!-- Wizard with Validation -->
@@ -216,80 +216,43 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Input Hotel Baru</h3>
+                                <h3 class="panel-title">Input Itenary Baru</h3>
                             </div>
                             <div class="panel-body">
-                              <form class="form-horizontal" role="form">
+                              <form class="form-horizontal" role="form" action="master-gallery.html">
                                   <div class="form-group">
-                                      <label class="col-md-2 control-label">File</label>
+                                      <label class="col-md-2 control-label" for="detailjadwal_id">Jadwal</label>
                                       <div class="col-md-10">
-                                          <input type="file" class="form-control" name="file" value="Masukan gambar hotel..." autofocus>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label class="col-md-2 control-label" for="kota">Kota</label>
-                                      <div class="col-md-10">
-                                          <input type="kota" id="kota" name="kota" class="form-control" placeholder="">
+                                          <select name="detailjadwal_id" class="select2" id="detailjadwal_id">
+                                              <option value="">12/07/2018</option>
+                                              <option value="">12/07/2018</option>
+                                              <option value="">12/07/2018</option>
+                                          </select>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-md-2 control-label" for="nama">Nama</label>
+                                      <label class="col-md-2 control-label" for="judul">Judul</label>
                                       <div class="col-md-10">
-                                          <input type="text" id="nama" class="form-control" name="nama">
+                                          <input type="text" class="form-control" name="judul" id="judul" autofocus>
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-md-2 control-label">Lokasi Map</label>
+                                      <label class="col-md-2 control-label" for="datepicker">Tanggal Itenary</label>
                                       <div class="col-md-10">
-                                          <input type="text" class="form-control" name="lokasi_map">
+                                          <input name="tanggal_itenary" class="form-control" id="datepicker">
                                       </div>
                                   </div>
                                   <div class="form-group">
-                                      <label class="col-md-2 control-label">Skor</label>
+                                      <label class="col-md-2 control-label" for="datepicker">Link</label>
                                       <div class="col-md-10">
-                                        <div class="radio-inline">
-                                              <label class="cr-styled" for="example-radio4">
-                                                  <input type="radio" id="example-radio4" name="slpr" value="1">
-                                                  <i class="fa"></i>
-                                                  1
-                                              </label>
-                                          </div>
-                                          <div class="radio-inline">
-                                              <label class="cr-styled" for="example-radio5">
-                                                  <input type="radio" id="example-radio5" name="slpr" value="2">
-                                                  <i class="fa"></i>
-                                                  2
-                                              </label>
-                                          </div>
-                                          <div class="radio-inline">
-                                              <label class="cr-styled" for="example-radio6">
-                                                  <input type="radio" id="example-radio6" name="slpr" value="3">
-                                                  <i class="fa"></i>
-                                                  3
-                                              </label>
-                                          </div>
-                                          <div class="radio-inline">
-                                              <label class="cr-styled" for="example-radio7">
-                                                  <input type="radio" id="example-radio7" name="slpr" value="4">
-                                                  <i class="fa"></i>
-                                                  4
-                                              </label>
-                                          </div>
-                                          <div class="radio-inline">
-                                              <label class="cr-styled" for="example-radio8">
-                                                  <input type="radio" id="example-radio8" name="slpr" value="5">
-                                                  <i class="fa"></i>
-                                                  5
-                                              </label>
-                                          </div>
+                                          <input name="link" class="form-control">
                                       </div>
                                   </div>
-                                  <div class="form-group m-b-0">
-                                      <div class="col-sm-offset-2 col-sm-9">
-                                        <button type="submit" class="btn btn-info">Tambah</button>
+                                  <div class="form-group">
+                                      <div class="col-md-offset-2 col-md-10">
+                                          <button class="btn btn-sm btn-primary" type="submit" onclick="alert('Successfully Added!')">Tambah</button>
                                       </div>
                                   </div>
-
                               </form>
                             </div>  <!-- End panel-body -->
                         </div> <!-- End panel -->
