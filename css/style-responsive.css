@@ -1,3 +1,4 @@
+
 /*** Aside Collapsed ***/
 @media (min-width: 769px) {
   aside.left-panel.collapsed {
@@ -10,7 +11,7 @@
   }
 
   aside.left-panel.collapsed .user .user-login,
-aside.left-panel.collapsed span.nav-label {
+aside.left-panel.collapsed span.nav-label  {
     display: none;
   }
 
