@@ -1,0 +1,35 @@
+--UPDATE LIST FRONT-END--
+
+1. Dashboard -Total Agent 
+			 -total jamaah, 
+			 -total prospek, 
+			 -total potensi & komisi
+			 -grafik prospek & jamaah
+
+2. List Agent  Tombol Approval 
+			   Notifikasi
+			   nama
+			   nomor telepon 
+			   koordinator
+			   approve button
+
+3. Caljam = Prospek 
+
+4. Data Jamaah - Tambahin kolom agent 
+			   - Status (Lunas/DP)
+			   - Filter (DP/Lunas/Berangkat/Pulang)
+
+
+5. Input Jamaah - Delete upload form
+				- 
+
+6. Laporan Caljam = Data Prospek - Submenu
+								 - Tambah kolom agent di tabel
+
+7. NOtifikasi di bagi menjadi 4 - Pesan
+								- Keberangkatan
+								- Pulang
+								- Custom to Agent (push notification)
+								- Kalkulasi 
+									-Keterangan, contoh : Segera membayar DP dll!									
+								- 

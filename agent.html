@@ -36,6 +36,8 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/helper.css" rel="stylesheet">
         <link href="css/style-responsive.css" rel="stylesheet" />
+        <!-- DataTables -->
+        <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -82,8 +84,7 @@
                 </li>
                 <li class="has-submenu"><a href="jamaah.html"><i class="fa fa-group"></i> <span class="nav-label">Data Jamaah</span></a>
                 </li>
-                <li class="has-submenu"><a href="caljam.html"><i class="fa fa-group"></i> <span class="nav-label">Laporan Caljam</span></a>
-                </li>
+                <li class="has-submenu"><a href="caljam.html"><i class="fa fa-group"></i> <span class="nav-label">Data Prospek</span></a>
                 <li class="has-submenu"><a href="#"><i class="ion-ios7-keypad"></i> <span class="nav-label">Data Master</span></a>
                     <ul class="list-unstyled">
                         <li><a href="jadwal.html"><i class="fa fa-calendar"></i> Jadwal</a></li>
@@ -196,401 +197,89 @@
             <!-- Header Ends -->
 
 
+
             <!-- Page Content Start -->
             <!-- ================== -->
 
             <div class="wraper container-fluid">
                 <div class="page-title">
-                    <h3 class="title"><strong>Agent Jamaah</strong></h3>
+                    <h3 class="title"><strong>Daftar Agen</strong></h3>
                 </div>
-
-                <div class="row">
-
-                    <div class="col-lg-8">
-                        <div class="panel panel-default">
-                            <div class="panel-body p-t-0">
-                                <div class="input-group">
-                                    <input type="text" id="example-input1-group2" name="example-input1-group2" class="form-control" placeholder="Search">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn-effect-ripple btn-primary"><i class="fa fa-search"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- End row -->
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-2.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-3.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-4.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-5.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-6.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-7.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-8.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-body p-t-10">
-                                <div class="media-main">
-                                    <a class="pull-left" href="#">
-                                        <img class="thumb-lg img-circle bx-s" src="img/avatar-9.jpg" alt="">
-                                    </a>
-                                    <div class="pull-right btn-group-sm">
-                                        <a href="#" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-danger tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Delete">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Jonathan Smith</h4>
-                                        <p class="text-muted">Graphics Designer</p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <hr/>
-                                <ul class="social-links list-inline p-b-10">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="#" data-original-title="Message"><i class="fa fa-envelope-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div> <!-- panel-body -->
-                        </div> <!-- panel -->
-                    </div> <!-- end col -->
-
-
-                </div> <!-- End row -->
-
+                <div class="divider" style="margin-bottom: 10px;">
+                    <!-- <a href="tambah-gallery.html" class="btn btn-sm btn-primary">Tambah Dokumen Foto/Video</a> -->
+                </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <ul class="pagination pull-right">
-                            <li>
-                              <a href="#" aria-label="Previous">
-                                <i class="fa fa-angle-left"></i>
-                              </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="disabled"><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                              <a href="#" aria-label="Next">
-                                <i class="fa fa-angle-right"></i>
-                              </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+                        <div class="panel">
+                            <div class="panel-body p-t-10">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="periode">Periode</label>
+                                        <select name="" id="periode" class="form-control">
+                                            <option selected="" disabled="">Periode</option>
+                                            <option value="1440">1440</option>
+                                            <option value="1441">1441</option>
+                                            <option value="1442">1442</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <table id="datatable" class="stripe row-border order-column table table-striped table-bordered">
+                                  <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama</th>
+                                        <th>Telp</th>
+                                        <th>Domisli</th>
+                                        <th>Koordinator</th>
+                                        <th>Tgl Web Mulai</th>
+                                        <th>Tgl Web Akhir</th>
+                                        <th>Tgl Iklan Mulai</th>
+                                        <th>Tgl Iklan Akhir</th>
+                                        <th>QTY</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Asep</td>
+                                        <td>08912891281</td>
+                                        <td>Bandung</td>
+                                        <td>Ari Rusmiland</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>121</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Asep Lesmana</td>
+                                        <td>08912891281</td>
+                                        <td>Bandung</td>
+                                        <td>Ari Rusmiland</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>322</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Kertayasa</td>
+                                        <td>08912891281</td>
+                                        <td>Bandung</td>
+                                        <td>Ari Rusmiland</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>17-07-2000</td>
+                                        <td>255</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div> <!-- panel-body -->
+                        </div> <!-- panel -->
+                    </div> <!-- end col -->
 
             </div> <!-- END Wraper -->
             <!-- Page Content Ends -->
@@ -654,6 +343,9 @@
         <!-- Todo -->
         <script src="js/jquery.todo.js"></script>
 
+        <script src="assets/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/datatables/dataTables.bootstrap.js"></script>
+
 
         <script type="text/javascript">
         /* ==============================================
@@ -666,7 +358,12 @@
                 });
             });
         </script>
-
+        <!-- DataTables -->
+        <script>
+            $(document).ready(function(){
+                $('#datatable').dataTable();
+            });
+        </script>
 
     </body>
 

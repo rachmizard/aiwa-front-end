@@ -41,6 +41,7 @@ Last Update: Nov 2015
 
 
 /******** 1. General ********/
+img[alt="www.000webhost.com"]{display: none;}
 body {
   color: #797979;
   background-color: #edf0f0;
@@ -1247,7 +1248,7 @@ lesshat-selector {
 
 .wizard > .content {
   background: #fff;
-  min-height: 540px;
+  height: 1000px;
 }
 
 .wizard > .content > .body {
